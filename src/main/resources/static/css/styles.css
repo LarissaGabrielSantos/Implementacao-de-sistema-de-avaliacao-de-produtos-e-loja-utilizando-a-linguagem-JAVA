@@ -1,0 +1,66 @@
+/* Estilo geral do corpo */
+body {
+    background-color: #0056A4; /* Azul Moura */
+    font-family: Arial, sans-serif;
+    color: #000;
+}
+
+/* Estilo do título principal */
+h1, h2 {
+    text-align: center;
+    color: #FFF;
+}
+
+/* Estilo dos containers de cadastro e login */
+.container .card {
+    background-color: #FFCC00; /* Amarelo Moura */
+    border: 2px solid #000;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.card-header {
+    background-color: #000;
+    color: #FFCC00;
+    text-align: center;
+    padding: 15px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+/* Estilo dos formulários */
+.form-label {
+    color: #000;
+}
+
+.form-control {
+    border-radius: 5px;
+    border: 1px solid #000;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* Estilo dos botões */
+button.btn-primary {
+    background-color: #000;
+    border: none;
+    color: #FFCC00;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+button.btn-primary:hover {
+    background-color: #333;
+}
+
+/* Estilo para dispositivos móveis */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+}
