@@ -1,6 +1,10 @@
+@import url('https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css');
+
+
+
 /* Estilo geral do corpo */
 body {
-    background-color: #0056A4; /* Azul Moura */
+    background-color: #0056A4; 
     font-family: Arial, sans-serif;
     color: #000;
 }
@@ -13,7 +17,7 @@ h1, h2 {
 
 /* Estilo dos containers de cadastro e login */
 .container .card {
-    background-color: #FFCC00; /* Amarelo Moura */
+    background-color: #FFCC00; 
     border: 2px solid #000;
     border-radius: 10px;
     margin-top: 20px;
