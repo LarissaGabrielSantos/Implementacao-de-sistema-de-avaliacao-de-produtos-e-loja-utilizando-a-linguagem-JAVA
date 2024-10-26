@@ -1,70 +1,94 @@
-@import url('https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css');
+/* Reset de Margens e Padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-
-
-/* Estilo geral do corpo */
+/* Estilo Global */
 body {
-    background-color: #0056A4; 
     font-family: Arial, sans-serif;
-    color: #000;
+    background-color: #f4f4f4;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* Estilo do título principal */
-h1, h2 {
-    text-align: center;
-    color: #FFF;
-}
-
-/* Estilo dos containers de cadastro e login */
-.container .card {
-    background-color: #FFCC00; 
-    border: 2px solid #000;
+/* Container Principal */
+.container {
+    width: 90%;
+    max-width: 600px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+}
+
+/* Títulos */
+h1 {
+    color: #002855; /* Azul Escuro */
+    margin-bottom: 20px;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: #ffc72c; /* Amarelo */
+    font-weight: bold;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+/* Tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
     margin-top: 20px;
 }
 
-.card-header {
-    background-color: #000;
-    color: #FFCC00;
-    text-align: center;
-    padding: 15px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-
-.card-body {
-    padding: 20px;
-}
-
-/* Estilo dos formulários */
-.form-label {
-    color: #000;
-}
-
-.form-control {
-    border-radius: 5px;
-    border: 1px solid #000;
+th, td {
     padding: 10px;
-    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
 }
 
-/* Estilo dos botões */
-button.btn-primary {
-    background-color: #000;
-    border: none;
-    color: #FFCC00;
-    padding: 10px 20px;
-    text-transform: uppercase;
+th {
+    background-color: #002855; /* Azul Escuro */
+    color: #fff;
+}
+
+tr:nth-child(even) {
+    background-color: #f0f8ff;
+}
+
+/* Formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+input, textarea, button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Botão */
+button {
+    background-color: #002855; /* Azul Escuro */
+    color: white;
+    font-weight: bold;
     cursor: pointer;
+    transition: background-color 0.3s;
 }
 
-button.btn-primary:hover {
-    background-color: #333;
-}
-
-/* Estilo para dispositivos móveis */
-@media (max-width: 768px) {
-    .container {
-        width: 100%;
-    }
+button:hover {
+    background-color: #ffc72c; /* Amarelo */
+    color: #002855;
 }

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+    <title>Avaliações</title>
+	<link rel="stylesheet" href="/static/css/styles.css">
+
+</head>
+<body>
+    <h1>Avaliações de Clientes</h1>
+    <a href="formAvaliacao.html">Nova Avaliação</a>
+    <table border="1">
+        <tr>
+            <th>Cliente</th>
+            <th>Produto</th>
+            <th>Nota</th>
+            <th>Comentário</th>
+        </tr>
+        <tr th:each="avaliacao : ${avaliacoes}">
+            <td th:text="${avaliacao.nomeCliente}"></td>
+            <td th:text="${avaliacao.produto}"></td>
+            <td th:text="${avaliacao.nota}"></td>
+            <td th:text="${avaliacao.comentario}"></td>
+        </tr>
+    </table>
+</body>
+</html>

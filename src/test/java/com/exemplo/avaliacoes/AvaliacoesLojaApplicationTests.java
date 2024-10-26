@@ -1,12 +1,12 @@
-package br.com.arq;
+package com.exemplo.avaliacoes;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
-//@SpringBootTest
-class LoginPrApplicationTests {
+@SpringBootTest
+class AvaliacoesLojaApplicationTests {
 
-	//@Test
+	@Test
 	void contextLoads() {
 	}
 
