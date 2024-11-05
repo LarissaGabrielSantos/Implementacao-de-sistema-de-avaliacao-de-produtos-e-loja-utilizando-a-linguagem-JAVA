@@ -6,12 +6,12 @@
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>3.3.5</version>
-		<relativePath/> <!-- lookup parent from repository -->
+		<relativePath/> 
 	</parent>
 	<groupId>com.exemplo.avaliacoes</groupId>
-	<artifactId>AvaliacoesLoja</artifactId>
+	<artifactId>CarregaScore</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>AvaliacoesLoja</name>
+	<name>CarregaScore</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>
 	<licenses>
@@ -43,6 +43,12 @@
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+			<scope>runtime</scope>
+			<optional>true</optional>
+		</dependency>
 		<dependency>
 			<groupId>com.mysql</groupId>
 			<artifactId>mysql-connector-j</artifactId>

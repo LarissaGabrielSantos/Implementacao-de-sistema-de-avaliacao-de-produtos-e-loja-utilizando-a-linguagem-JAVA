@@ -2,13 +2,14 @@
 <html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
 <head>
 	<meta charset="UTF-8">
-    <title>Avaliações</title>
+    <title>Avaliações - CarregaScore</title>
 	<link rel="stylesheet" href="/static/css/styles.css">
 
 </head>
 <body>
-    <h1>Avaliações de Clientes</h1>
-    <a href="formAvaliacao.html">Nova Avaliação</a>
+	<br>
+    <h1 id="H1Avaliacao">CarregaScore - Avaliações de Clientes</h1>
+    <a th:href="@{/avaliacoes/nova}">Nova Avaliação</a>
     <table border="1">
         <tr>
             <th>Cliente</th>

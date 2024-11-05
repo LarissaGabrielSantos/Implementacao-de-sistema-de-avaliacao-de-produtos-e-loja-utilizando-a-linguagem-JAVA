@@ -1,10 +1,10 @@
-package com.exemplo.avaliacoes;
+package com.carregascore;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class AvaliacoesLojaApplicationTests {
+class CarregaScoreApplicationTests {
 
 	@Test
 	void contextLoads() {

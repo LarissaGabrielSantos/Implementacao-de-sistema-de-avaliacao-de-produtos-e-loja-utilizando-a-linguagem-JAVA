@@ -2,23 +2,27 @@
 <html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
 <head>
 	<meta charset="UTF-8">
-    <title>Nova Avaliação</title>
+    <title>Nova Avaliação - CarregaScore</title>
 	<link rel="stylesheet" href="/static/css/styles.css">
 
 </head>
 <body>
-    <h1>Nova Avaliação</h1>
-    <form action="/avaliacoes/salvar" method="post">
+	<br>
+    <h1 id="H1Avaliacao">CarregaScore - Nova Avaliação</h1>
+	<br>
+    <form th:action="@{/avaliacoes/salvar}" method="post" th:object="${avaliacoes}">
         <label>Nome do Cliente:</label>
-        <input type="text" name="nomeCliente" required><br>
+        <input type="text" name="nomeCliente" th:value="${avaliacoes.nomeCliente}" required><br>
         <label>Produto:</label>
-        <input type="text" name="produto" required><br>
+        <input type="text" name="produto" th:value="${avaliacoes.produto}" required><br>
         <label>Nota:</label>
-        <input type="number" name="nota" min="1" max="5" required><br>
+        <input type="number" name="nota" th:value="${avaliacoes.nota}" min="1" max="5" required><br>
         <label>Comentário:</label>
-        <textarea name="comentario" required></textarea><br>
+        <textarea name="comentario" th:value="${avaliacoes.comentario}" required></textarea><br>
         <button type="submit">Salvar</button>
     </form>
-	<a href="avaliacoes.html">Home</a>
+	<br>
+	<br>
+	<a th:href="@{/avaliacoes/listagem}">Home</a>
 </body>
 </html>
