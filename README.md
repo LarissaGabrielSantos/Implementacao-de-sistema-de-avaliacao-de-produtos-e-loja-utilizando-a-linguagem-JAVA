@@ -1,4 +1,4 @@
-#  CarregaScore - a sua página de avaliações
+#  CarregaScore - Página de avaliações
 
 
 Bem-vindo ao **CarregaScore** - a sua página de avaliações!
