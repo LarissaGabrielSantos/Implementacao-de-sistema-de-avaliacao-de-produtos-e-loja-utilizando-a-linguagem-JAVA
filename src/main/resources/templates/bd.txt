@@ -1,0 +1,35 @@
+
+CREATE DATABASE carregascore;
+USE carregascore;
+
+
+CREATE TABLE cliente (
+    id BIGINT NOT NULL AUTO_INCREMENT,
+    email VARCHAR(255) NULL,
+    nome VARCHAR(255) NULL,
+    senha VARCHAR(255) NULL,
+    PRIMARY KEY (id)
+);
+
+
+CREATE TABLE avaliacoes (
+    id INT NOT NULL AUTO_INCREMENT,
+    nome_cliente VARCHAR(100) NOT NULL,
+    produto VARCHAR(100) NOT NULL,
+    avaliacao TEXT NULL,
+    nota INT NULL,
+    data_avaliacao TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    PRIMARY KEY (id)
+);
+
+CREATE TABLE avaliacao (
+    id BIGINT NOT NULL AUTO_INCREMENT,
+    avaliacao VARCHAR(255) NULL,
+    data_avaliacao DATETIME(6) NULL,
+    nome_cliente VARCHAR(255) NULL,
+    nota INT NULL,
+    produto VARCHAR(255) NULL,
+    comentario VARCHAR(255) NULL,
+    data_criacao DATETIME(6) NULL,
+    PRIMARY KEY (id)
+);
